@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rQe-cV-ZOL">
+                                <rect key="frame" x="20" y="144" width="374" height="250"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="zeF-Tr-Hni">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="250"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGw-cY-QPy">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="X5S-kp-Vph"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLd-bx-scP">
+                                                <rect key="frame" x="0.0" y="100" width="167" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="H4i-27-rWr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip (%)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcc-vl-X1G">
+                                                <rect key="frame" x="0.0" y="200" width="167" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="pgb-Zh-tdE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Xas-WL-0ON">
+                                        <rect key="frame" x="187" y="0.0" width="187" height="250"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total Bill" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LtY-Fg-dMM">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Qrm-mb-JUo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tax Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4CI-96-hDY">
+                                                <rect key="frame" x="0.0" y="100" width="187" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="bc3-Sx-pwC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="g6X-fQ-CXz">
+                                                <rect key="frame" x="0.0" y="200" width="187" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtT-Wc-19u">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44.5" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="13"/>
+                                                        <state key="normal" title="%10">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="percen10tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bga-d6-r2A"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJe-MN-fgK">
+                                                        <rect key="frame" x="47.5" y="0.0" width="44.5" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="13"/>
+                                                        <state key="normal" title="%15">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="percent15tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E0e-pk-IWj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4v-6T-7tz">
+                                                        <rect key="frame" x="95" y="0.0" width="44.5" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="12"/>
+                                                        <state key="normal" title="%18">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="percent18tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2RN-jG-4EI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="chJ-rV-q9b">
+                                                        <rect key="frame" x="142.5" y="0.0" width="44.5" height="50"/>
+                                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="6MK-kw-Hbz"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Xas-WL-0ON" firstAttribute="width" secondItem="rQe-cV-ZOL" secondAttribute="width" multiplier="0.5" id="w2P-lN-yLf"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Coc-ov-81F">
+                                <rect key="frame" x="20" y="444" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="39e-Q1-1L2"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Value:   £..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHi-8F-NlH">
+                                <rect key="frame" x="20" y="574" width="374" height="37"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urt-ES-Jef">
+                                <rect key="frame" x="20" y="444" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JuD-35-F0q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="23"/>
+                                <state key="normal" title="CALCULATE"/>
+                                <connections>
+                                    <action selector="calculateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AD9-cF-4Yb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Value: £..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNc-ID-gRP">
+                                <rect key="frame" x="20" y="661" width="374" height="37"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipsy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64g-Yw-LLG">
+                                <rect key="frame" x="144" y="44" width="126" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="o17-zQ-JXB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="43"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="3" height="3"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRv-Zc-SbC">
+                                <rect key="frame" x="20" y="794" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vwk-fa-LL3"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDB-kt-yvm">
+                                <rect key="frame" x="20" y="794" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2kT-cE-j91"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="23"/>
+                                <state key="normal" title="CLEAR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QWL-PT-aOf"/>
+                                    <action selector="clearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JAf-fa-zKR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="urt-ES-Jef" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1jv-tt-wI9"/>
+                            <constraint firstItem="rNc-ID-gRP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2RG-Tr-M6w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JRv-Zc-SbC" secondAttribute="trailing" constant="20" id="2s3-uj-xYB"/>
+                            <constraint firstItem="rNc-ID-gRP" firstAttribute="leading" secondItem="kHi-8F-NlH" secondAttribute="leading" id="2vz-Jg-bVi"/>
+                            <constraint firstItem="Coc-ov-81F" firstAttribute="top" secondItem="urt-ES-Jef" secondAttribute="top" id="94u-k9-YfL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Coc-ov-81F" secondAttribute="trailing" constant="20" id="E8r-0I-AlX"/>
+                            <constraint firstItem="urt-ES-Jef" firstAttribute="width" secondItem="Coc-ov-81F" secondAttribute="width" id="EHH-29-bZ0"/>
+                            <constraint firstItem="64g-Yw-LLG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="F6C-OC-Pnm"/>
+                            <constraint firstItem="kHi-8F-NlH" firstAttribute="top" secondItem="urt-ES-Jef" secondAttribute="bottom" constant="80" id="G00-ho-TwQ"/>
+                            <constraint firstItem="64g-Yw-LLG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="HTh-nr-o0H"/>
+                            <constraint firstItem="rQe-cV-ZOL" firstAttribute="top" secondItem="64g-Yw-LLG" secondAttribute="bottom" constant="50" id="JkJ-zE-yTN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JRv-Zc-SbC" secondAttribute="bottom" constant="50" id="M4V-qQ-uax"/>
+                            <constraint firstItem="rQe-cV-ZOL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MRI-FI-ZCw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="64g-Yw-LLG" secondAttribute="trailing" constant="144" id="SqQ-Na-yKq"/>
+                            <constraint firstItem="urt-ES-Jef" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="WUh-9Y-Ih8"/>
+                            <constraint firstItem="xDB-kt-yvm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XTA-yZ-rh0"/>
+                            <constraint firstItem="Coc-ov-81F" firstAttribute="top" secondItem="rQe-cV-ZOL" secondAttribute="bottom" constant="50" id="XYd-rZ-hLo"/>
+                            <constraint firstItem="Coc-ov-81F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ydx-Os-dMS"/>
+                            <constraint firstItem="Coc-ov-81F" firstAttribute="bottom" secondItem="urt-ES-Jef" secondAttribute="bottom" id="ZnN-Ix-XOd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xDB-kt-yvm" secondAttribute="bottom" constant="50" id="ZnP-VR-Z6z"/>
+                            <constraint firstItem="rNc-ID-gRP" firstAttribute="top" secondItem="kHi-8F-NlH" secondAttribute="bottom" constant="50" id="b9A-fV-Lun"/>
+                            <constraint firstItem="kHi-8F-NlH" firstAttribute="leading" secondItem="urt-ES-Jef" secondAttribute="leading" id="dQJ-HO-MkD"/>
+                            <constraint firstItem="urt-ES-Jef" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eOT-vX-NfT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rQe-cV-ZOL" secondAttribute="trailing" constant="20" id="hcV-Fk-m02"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xDB-kt-yvm" secondAttribute="trailing" constant="20" id="rZ0-fQ-mdz"/>
+                            <constraint firstItem="JRv-Zc-SbC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ttu-oU-neA"/>
+                            <constraint firstItem="kHi-8F-NlH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vPt-kv-0m9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calculateButton" destination="urt-ES-Jef" id="Kbr-i1-zLI"/>
+                        <outlet property="calculateView" destination="Coc-ov-81F" id="eJV-83-9MU"/>
+                        <outlet property="clearButton" destination="xDB-kt-yvm" id="Q2y-gA-ZAo"/>
+                        <outlet property="clearView" destination="JRv-Zc-SbC" id="fWP-dm-D7v"/>
+                        <outlet property="customTipTextField" destination="chJ-rV-q9b" id="OX6-nI-GWr"/>
+                        <outlet property="percent10" destination="PtT-Wc-19u" id="Xik-lh-zpi"/>
+                        <outlet property="percent15" destination="RJe-MN-fgK" id="QQD-Wl-gP9"/>
+                        <outlet property="percent18" destination="F4v-6T-7tz" id="lOJ-It-YVO"/>
+                        <outlet property="taxValueTextField" destination="4CI-96-hDY" id="8wm-fa-hcJ"/>
+                        <outlet property="tipValueLabel" destination="kHi-8F-NlH" id="FD2-AL-YhM"/>
+                        <outlet property="totalBillValueTextField" destination="LtY-Fg-dMM" id="EEt-aT-37I"/>
+                        <outlet property="totalValueLabel" destination="rNc-ID-gRP" id="nz0-92-6Dg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
